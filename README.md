@@ -1,4 +1,4 @@
-![William Berger - Inteligência Artificial](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZHI1bmQ5b2Q2anJieWE5OTd6dHQ2OHh6c2ZmamZ6cG42cnp1dnVjNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ny0X8oVbIw7qwhAvlo/giphy.gif)
+<img width=100% bottom=50px src="https://github.com/user-attachments/assets/824417ad-3598-45cd-87a5-b8464a28be3a"/>
 
 "Welcome!"
 
