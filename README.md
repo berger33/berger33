@@ -5,6 +5,11 @@
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=14B6E9&center=true&width=435&lines=%F0%9F%91%8B+Ol%C3%A1%2C+sou+William+M.+Berger!;%F0%9F%92%BB+Estudante+de+IA+-+PUC%2FPR;%F0%9F%93%8A+Apaixonado+por+Tecnologia;%F0%9F%94%8E+Explorando+Machine+Learning;%F0%9F%A4%96+Criando+Solu%C3%A7%C3%B5es+com+IA;%F0%9F%9A%80+Pronto+para+Novos+Desafios!" alt="Typing SVG" /></a>
 </div>
 
+###
+
+<h3 align="center">Melhores Tecnologias <3</h3>
+
+###
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py" height="45" alt="python logo"  />
   <img width="12" />
@@ -19,9 +24,7 @@
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="45" alt="intellij logo"  />
   <img width="12" />
   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="45" alt="jupyter logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/godot/godot-original.svg" height="45" alt="godot logo"  />
-</div>
+  </div>
 
 ###
 
