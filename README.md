@@ -1,9 +1,9 @@
 <img width=100% bottom=50px src="https://github.com/user-attachments/assets/824417ad-3598-45cd-87a5-b8464a28be3a"/>
 <br>
 <br>
+<div align="center" heigth="180em"
 <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=14B6E9&center=true&width=435&lines=%F0%9F%91%8B+Ol%C3%A1%2C+sou+William+M.+Berger!;%F0%9F%92%BB+Estudante+de+IA+-+PUC%2FPR;%F0%9F%93%8A+Apaixonado+por+Tecnologia;%F0%9F%94%8E+Explorando+Machine+Learning;%F0%9F%A4%96+Criando+Solu%C3%A7%C3%B5es+com+IA;%F0%9F%9A%80+Pronto+para+Novos+Desafios!" alt="Typing SVG" /></a>
-
-###
+</div>
 
 <div align="center">
   <img src="https://skillicons.dev/icons?i=py" height="45" alt="python logo"  />
