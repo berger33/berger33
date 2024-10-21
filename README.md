@@ -1,13 +1,7 @@
 <img width=100% bottom=50px src="https://github.com/user-attachments/assets/824417ad-3598-45cd-87a5-b8464a28be3a"/>
 <br>
 <br>
-"Welcome!"
-
-<h3 align="center">Techs</h3>
-
-###
-
-<p align="left"></p>
+<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=14B6E9&center=true&width=435&lines=%F0%9F%91%8B+Ol%C3%A1%2C+sou+William+M.+Berger!;%F0%9F%92%BB+Estudante+de+IA+-+PUC%2FPR;%F0%9F%93%8A+Apaixonado+por+Tecnologia;%F0%9F%94%8E+Explorando+Machine+Learning;%F0%9F%A4%96+Criando+Solu%C3%A7%C3%B5es+com+IA;%F0%9F%9A%80+Pronto+para+Novos+Desafios!" alt="Typing SVG" /></a>
 
 ###
 
@@ -32,8 +26,8 @@
 ###
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=berger33&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=berger33&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
+  <img heigth="180em" src="https://github-readme-stats.vercel.app/api?username=berger33&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dracula&locale=en&hide_border=false&order=1" height="150" alt="stats graph"  />
+  <img align="right" heigth="180em" src="https://github-readme-stats.vercel.app/api/top-langs?username=berger33&locale=en&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dracula&hide_border=false&order=2" height="150" alt="languages graph"  />
   <img src="https://github-profile-trophy.vercel.app?username=berger33&theme=dracula&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false&order=4" height="150" alt="trophy graph"  />
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=berger33&radius=16&theme=react&area=true&order=5" height="300" alt="activity-graph graph"  />
 </div>
