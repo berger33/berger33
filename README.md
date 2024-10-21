@@ -1,4 +1,4 @@
-<img width=100% bottom=50px src="https://github.com/user-attachments/assets/824417ad-3598-45cd-87a5-b8464a28be3a"/>
+<img width=100% bottom=20px src="https://github.com/user-attachments/assets/824417ad-3598-45cd-87a5-b8464a28be3a"/>
 
 "Welcome!"
 
