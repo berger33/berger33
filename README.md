@@ -1,5 +1,5 @@
 <div align="center">
-# William de Melo Berger 🌟
+William de Melo Berger 🌟
 </div>
 
 <div align="center">
@@ -22,7 +22,7 @@
 ---
 
 <div align="center">
-  # Melhores Tecnologias <3
+  Melhores Tecnologias <3
 </div>
 
 <div align="center">
@@ -38,7 +38,7 @@
 ---
 
 <div align="center">
-  # Estatísticas
+  Estatísticas
 </div>
 
 <div align="center">
@@ -50,7 +50,7 @@
 ---
 
 <div align="center">
-  # Social Media
+  Social Media
 </div>
 
 <div align="center">
@@ -68,7 +68,7 @@
 ---
 
 <div align="center">
-  ## Contador de Visualizações
+  Contador de Visualizações
 </div>
 
 <div align="center">
@@ -79,7 +79,7 @@
 ---
 
 <div align="center">
-  # Sobre Mim
+  Sobre Mim
 </div>
 
 <div align="center">
