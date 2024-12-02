@@ -1,4 +1,6 @@
+<div align="center">
 # William M. Berger 🌟
+</div>
 
 <div align="center">
   <img src="https://github.com/user-attachments/assets/824417ad-3598-45cd-87a5-b8464a28be3a" alt="William M. Berger Banner" style="width: 100%; height: auto;">
