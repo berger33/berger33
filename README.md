@@ -5,9 +5,15 @@
 </div>
 
 <div align="center">
+  <h2>👋 Olá! Eu sou William M. Berger</h2>
+  <p>🎓 Estudante de Inteligência Artificial na PUC/PR<br>
+  💻 Apaixonado por tecnologia, explorando Machine Learning e criando soluções com IA<br>
+  🚀 Em busca de novos desafios na área de tecnologia</p>
+</div>
+
+<div align="center">
   <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=14B6E9&center=true&width=435&lines=%F0%9F%91%8B+Ol%C3%A1%2C+sou+William+M.+Berger!;%F0%9F%92%BB+Estudante+de+IA+-+PUC%2FPR;%F0%9F%93%8A+Apaixonado+por+Tecnologia;%F0%9F%94%8E+Explorando+Machine+Learning;%F0%9F%A4%96+Criando+Solu%C3%A7%C3%B5es+com+IA;%F0%9F%9A%80+Pronto+para+Novos+Desafios!" 
-    alt="Typing SVG">
+    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=14B6E9&center=true&width=435&lines=%F0%9F%91%8B+Bem-vindo+ao+meu+GitHub!;%F0%9F%A4%96+Aqui+eu+compartilho+projetos+com+IA!;%F0%9F%92%BB+Buscando+impactar+com+tecnologia!">
   </a>
 </div>
 
@@ -61,10 +67,23 @@
 
 <div align="center">
   ## Contador de Visualizações
+</div>
+
+<div align="center">
+  <p>Veja quantas pessoas visitaram meu perfil!</p>
   <img src="https://profile-counter.glitch.me/berger33/count.svg?" alt="Contador de Visualizações">
 </div>
 
 ---
+
+<div align="center">
+  ## Sobre Mim
+</div>
+
+<div align="center">
+  <p>Sou estudante dedicado e apaixonado por tecnologia, com interesse em inteligência artificial e aprendizado de máquina. Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa contribuir com minhas habilidades e aprender ainda mais.</p>
+  <p>🌱 Atualmente, estou focado em projetos de aprendizado de máquina, processamento de linguagem natural e desenvolvimento de sistemas inteligentes.</p>
+</div>
 
 <div align="center">
   Desenvolvido por **William M. Berger** | Estudante de IA - PUC/PR 🚀
