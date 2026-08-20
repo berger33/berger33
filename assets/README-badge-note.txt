@@ -1,1 +1,0 @@
-Badge ONE image asset managed in repository.
