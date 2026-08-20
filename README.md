@@ -117,6 +117,16 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 
 ---
 
+## Linguagens utilizadas no GitHub
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=berger33&layout=compact&langs_count=10&theme=github_dark&hide_border=true&card_width=520" alt="Distribuição automática das linguagens utilizadas nos repositórios públicos de William Berger">
+</p>
+
+> O painel é atualizado automaticamente a partir dos repositórios públicos e representa a distribuição de código detectada pelo GitHub. Ele não deve ser interpretado isoladamente como nível de proficiência em cada linguagem.
+
+---
+
 ## Em desenvolvimento contínuo
 
 Estou aprofundando conhecimentos em:
