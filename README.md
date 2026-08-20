@@ -1,85 +1,101 @@
-<div align="center">
-William de Melo Berger 🌟
-</div>
+# William de Melo Berger
 
-<div align="center">
-  <h2>👋 Olá! Eu sou William M. Berger</h2>
-  <p>🎓 Estudante de Análise e Desenvolvimento de Sistemas/PR<br>
-  💻 Apaixonado por tecnologia, explorando programação e criando soluções com IA<br>
-  🚀 Em busca de novos desafios na área de tecnologia</p>
-</div>
+**Inteligência Artificial aplicada | Desenvolvimento Python | Backend | Automação**
 
-<div align="center">
-  <a href="https://git.io/typing-svg">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&pause=1000&color=14B6E9&center=true&width=435&lines=%F0%9F%91%8B+Bem-vindo+ao+meu+GitHub!;%F0%9F%A4%96+Aqui+eu+compartilho+projetos+com+IA!;%F0%9F%92%BB+Buscando+impactar+com+tecnologia!">
-  </a>
-</div>
+Sou estudante de Inteligência Artificial e desenvolvimento de software, com foco em transformar problemas reais em aplicações funcionais. Atualmente concentro meus estudos e projetos em **Python, APIs, agentes de IA, RAG, automação, Docker e boas práticas de engenharia de software**.
+
+Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações de IA**, onde eu possa contribuir com projetos reais enquanto evoluo tecnicamente em um ambiente profissional.
+
+[LinkedIn](https://www.linkedin.com/in/william-m-berger/) · [Repositórios](https://github.com/berger33?tab=repositories)
 
 ---
 
-<div align="center">
-  Melhores Tecnologias <3
-</div>
+## Visão rápida
 
-<div align="center">
-  <img src="https://skillicons.dev/icons?i=py" height="45" alt="Python">
-  <img src="https://skillicons.dev/icons?i=java" height="45" alt="Java">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="45" alt="MySQL">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" height="45" alt="PyCharm">
-  <img src="https://skillicons.dev/icons?i=visualstudio" height="45" alt="Visual Studio">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/intellij/intellij-original.svg" height="45" alt="IntelliJ">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" height="45" alt="Jupyter">
-</div>
+- **Foco atual:** Python, backend e Inteligência Artificial aplicada
+- **IA aplicada:** LangChain, RAG, processamento documental e agentes
+- **Backend:** FastAPI, APIs REST e organização de serviços
+- **Dados:** Pandas, CSV, processamento e recuperação de informação
+- **Infraestrutura:** Docker, Docker Compose e fundamentos de deploy em nuvem
+- **Qualidade:** Git, GitHub, testes automatizados, CI e documentação técnica
+- **Idiomas:** Inglês avançado e espanhol básico
 
 ---
 
-<div align="center">
-  Estatísticas
-</div>
+## Projetos em destaque
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=berger33&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=vue-dark&locale=pt-br&hide_border=false" height="150" alt="Estatísticas do GitHub">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=berger33&locale=pt-br&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=vue-dark&hide_border=false" height="150" alt="Linguagens Mais Usadas">
-  <img src="https://github-profile-trophy.vercel.app/?username=berger33&theme=tokyonight&column=-1&row=1&margin-w=8&margin-h=8&no-bg=false&no-frame=false" height="150" alt="Troféus">
-</div>
+### [Aurora Moda Online — Agente Inteligente](https://github.com/berger33/Projeto)
 
----
+Projeto autoral desenvolvido para resolver um problema real de atendimento em e-commerce. O agente responde perguntas sobre compras, pagamentos, entregas, privacidade e devoluções usando exclusivamente uma base documental em PDF e CSV.
 
-<div align="center">
-  Social Media
-</div>
+**Principais pontos técnicos:**
 
-<div align="center">
-  <a href="https://www.linkedin.com/in/william-m-berger/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" alt="LinkedIn">
-  </a>
-  <a href="https://discord.com/" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" alt="Discord">
-  </a>
-</div>
+- Python + FastAPI
+- LangChain para processamento documental
+- Pandas para leitura de CSV
+- PyPDF para leitura de documentos
+- recuperação documental com TF-IDF
+- respostas fundamentadas com indicação de fontes
+- testes automatizados com Pytest
+- GitHub Actions para CI
+- Docker e Docker Compose
+- configuração para OCI Compute e Render
 
----
+> Este é atualmente o projeto que melhor representa meu processo completo de desenvolvimento: problema → arquitetura → implementação → testes → documentação → preparação para deploy.
 
-<div align="center">
-  Contador de Visualizações
-</div>
+### [LeadFlow Local-First](https://github.com/berger33/leadflow-local-first)
 
-<div align="center">
-  <p>Veja quantas pessoas visitaram meu perfil!</p>
-  <img src="https://profile-counter.glitch.me/berger33/count.svg?" alt="Contador de Visualizações">
-</div>
+Protótipo de infraestrutura local-first para experimentos com automação de atendimento, combinando **WhatsApp via WAHA**, **modelos locais via Ollama** e **Docker Compose**. O objetivo é estudar arquiteturas em que processamento e dados possam permanecer sob maior controle local.
+
+**Em evolução:** integração entre os serviços, persistência e camada de aplicação.
 
 ---
 
-<div align="center">
-  Sobre Mim
-</div>
+## Como eu trabalho
 
-<div align="center">
-  <p>Sou estudante dedicado e apaixonado por tecnologia, com interesse em inteligência artificial e programação. Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa contribuir com minhas habilidades e aprender ainda mais.</p>
-  <p>🌱 Atualmente, estou focado em projetos de desenvolvimento de sistemas inteligentes e automações.</p>
-</div>
+Nos projetos que considero de portfólio, procuro demonstrar mais do que código isolado:
 
-<div align="center">
-  Desenvolvido por **William M. Berger** | Estudante de ADS - Unifatecie 🚀
-</div>
+1. entendimento do problema;
+2. definição de arquitetura simples e justificável;
+3. organização clara do repositório;
+4. implementação incremental com histórico Git;
+5. testes e validação;
+6. README que permita outra pessoa executar o projeto;
+7. empacotamento e preparação para deploy quando aplicável.
+
+---
+
+## Stack que aparece nos meus projetos
+
+| Área | Tecnologias |
+| --- | --- |
+| Linguagem principal | Python |
+| Backend / API | FastAPI, Uvicorn, REST |
+| Inteligência Artificial | LangChain, RAG, agentes, recuperação documental |
+| Dados | Pandas, CSV, PyPDF |
+| Infraestrutura | Docker, Docker Compose |
+| Engenharia | Git, GitHub, Pytest, GitHub Actions |
+| Ferramentas / estudos | Ollama, automação local-first |
+
+---
+
+## Em desenvolvimento contínuo
+
+Estou aprofundando conhecimentos em:
+
+- arquitetura de software e APIs;
+- testes e qualidade de código;
+- bancos de dados e SQL;
+- deploy e serviços em nuvem;
+- aplicações de IA com recuperação de contexto;
+- automações e integração entre sistemas.
+
+Também mantenho repositórios de **estudo, exercícios e forks**. Para avaliação de trabalho autoral, recomendo começar pelos projetos destacados acima.
+
+---
+
+## Contato profissional
+
+A melhor forma de conhecer minha trajetória, formação, experiência e certificações é pelo meu **[LinkedIn](https://www.linkedin.com/in/william-m-berger/)**.
+
+Estou aberto a conexões, feedback técnico e oportunidades para iniciar ou consolidar minha carreira em desenvolvimento de software.
