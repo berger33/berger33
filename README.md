@@ -8,8 +8,8 @@ William de Melo Berger 🌟
 
 <div align="center">
   <h2>👋 Olá! Eu sou William M. Berger</h2>
-  <p>🎓 Estudante de Inteligência Artificial na PUC/PR<br>
-  💻 Apaixonado por tecnologia, explorando Machine Learning e criando soluções com IA<br>
+  <p>🎓 Estudante de Análise e Desenvolvimento de Sistemas/PR<br>
+  💻 Apaixonado por tecnologia, explorando programação e criando soluções com IA<br>
   🚀 Em busca de novos desafios na área de tecnologia</p>
 </div>
 
@@ -57,9 +57,6 @@ William de Melo Berger 🌟
   <a href="https://www.linkedin.com/in/william-m-berger/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/linkedin/default.svg" width="52" alt="LinkedIn">
   </a>
-  <a href="https://www.youtube.com/@William.Berger" target="_blank">
-    <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/youtube/default.svg" width="52" alt="YouTube">
-  </a>
   <a href="https://discord.com/" target="_blank">
     <img src="https://raw.githubusercontent.com/maurodesouza/profile-readme-generator/master/src/assets/icons/social/discord/default.svg" width="52" alt="Discord">
   </a>
@@ -83,10 +80,10 @@ William de Melo Berger 🌟
 </div>
 
 <div align="center">
-  <p>Sou estudante dedicado e apaixonado por tecnologia, com interesse em inteligência artificial e aprendizado de máquina. Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa contribuir com minhas habilidades e aprender ainda mais.</p>
-  <p>🌱 Atualmente, estou focado em projetos de aprendizado de máquina, processamento de linguagem natural e desenvolvimento de sistemas inteligentes.</p>
+  <p>Sou estudante dedicado e apaixonado por tecnologia, com interesse em inteligência artificial e programação. Estou em busca da minha primeira oportunidade na área de tecnologia, onde possa contribuir com minhas habilidades e aprender ainda mais.</p>
+  <p>🌱 Atualmente, estou focado em projetos de desenvolvimento de sistemas inteligentes e automações.</p>
 </div>
 
 <div align="center">
-  Desenvolvido por **William M. Berger** | Estudante de IA - PUC/PR 🚀
+  Desenvolvido por **William M. Berger** | Estudante de ADS - Unifatecie 🚀
 </div>
