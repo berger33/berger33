@@ -25,7 +25,7 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 ## Formação em destaque
 
 <p align="center">
-  <img src="assets/badge-one-ia.webp" width="170" alt="Badge Oracle Next Education - ONE - Agente de IA e RAG">
+  <img src="https://raw.githubusercontent.com/berger33/berger33/main/assets/badge-one-ia.webp" width="170" alt="Badge Oracle Next Education - ONE - Agente de IA e RAG">
 </p>
 
 <p align="center"><strong>Oracle Next Education (ONE) · Inteligência Artificial · Agentes e RAG</strong></p>
