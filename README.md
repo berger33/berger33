@@ -24,11 +24,11 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 
 ## Formação em destaque
 
-<p align="center">
-  <img src="./assets/badge-one-ia.svg" width="620" alt="Oracle Next Education - ONE - Inteligência Artificial, Agentes e RAG">
-</p>
-
-<p align="center"><strong>Oracle Next Education (ONE) · Inteligência Artificial · Agentes e RAG</strong></p>
+<div align="center">
+  <img src="./assets/badge-one-ia-correta.png" width="280" alt="Badge Oracle Next Education - ONE - Inteligência Artificial, Agentes e RAG">
+  <br><br>
+  <strong>Oracle Next Education (ONE) · Inteligência Artificial · Agentes e RAG</strong>
+</div>
 
 A formação ONE complementa meus projetos práticos em IA aplicada, especialmente construção de agentes, recuperação de contexto e soluções baseadas em documentação.
 
