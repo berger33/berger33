@@ -55,9 +55,13 @@ Projeto autoral desenvolvido para resolver um problema real de atendimento em e-
 
 > Este é atualmente o projeto que melhor representa meu processo completo de desenvolvimento: problema → arquitetura → implementação → testes → documentação → preparação para deploy.
 
-### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/README.md)
+### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/ACESSO.md)
 
 **Projeto de fim de semana criado para ajudar uma profissional de RH em uma necessidade real.** Transformei um fluxo espalhado entre contatos, vagas e acompanhamento manual em uma aplicação portátil que funciona sem instalação de servidor ou banco externo.
+
+**[▶ Abrir demo online](https://htmlpreview.github.io/?https://github.com/berger33/berger33/blob/main/portfolio/chs-recruta/app/CHS-Recruta-Demo.html)** · **[⬇ Baixar versão portátil](https://htmlpreview.github.io/?https://github.com/berger33/berger33/blob/main/portfolio/chs-recruta/app/download.html)** · **[📘 Ver case técnico](portfolio/chs-recruta/README.md)**
+
+**Credenciais da demonstração:** usuário `demo` · senha `demo123` · perfil Administradora.
 
 O sistema reúne **dashboard, banco de talentos, vagas, triagem, matching por profissão, funil de contratação, financeiro, relatórios CSV, histórico de auditoria, usuários e permissões, backup/restauração, busca global, perfil com foto e persistência local**.
 
@@ -77,7 +81,7 @@ Também desenvolvi uma camada de experiência de uso que inclui **modo dia/noite
 - redimensionamento e compressão de foto via Canvas API
 - responsividade e temas com CSS custom properties
 
-> A base operacional original contém dados de terceiros. Por privacidade, o portfólio publica o **case técnico detalhado**, não os contatos reais utilizados pela pessoa que recebeu a ferramenta.
+> A demo pública usa dados fictícios. A base operacional original contém dados de terceiros e não foi publicada por privacidade.
 
 ### [LeadFlow Local-First](https://github.com/berger33/leadflow-local-first)
 
