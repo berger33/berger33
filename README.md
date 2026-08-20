@@ -36,7 +36,7 @@ A formação ONE complementa meus projetos práticos em IA aplicada, especialmen
 
 ## Projetos em destaque
 
-### [Aurora Moda Online — Agente Inteligente](https://github.com/berger33/Projeto)
+### [Aurora Moda Online — Agente Inteligente - Projeto Oracle Next Education](https://github.com/berger33/Projeto)
 
 Projeto autoral desenvolvido para resolver um problema real de atendimento em e-commerce. O agente responde perguntas sobre compras, pagamentos, entregas, privacidade e devoluções usando exclusivamente uma base documental em PDF e CSV.
 
