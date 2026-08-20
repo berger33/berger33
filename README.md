@@ -55,6 +55,30 @@ Projeto autoral desenvolvido para resolver um problema real de atendimento em e-
 
 > Este é atualmente o projeto que melhor representa meu processo completo de desenvolvimento: problema → arquitetura → implementação → testes → documentação → preparação para deploy.
 
+### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/README.md)
+
+**Projeto de fim de semana criado para ajudar uma profissional de RH em uma necessidade real.** Transformei um fluxo espalhado entre contatos, vagas e acompanhamento manual em uma aplicação portátil que funciona sem instalação de servidor ou banco externo.
+
+O sistema reúne **dashboard, banco de talentos, vagas, triagem, matching por profissão, funil de contratação, financeiro, relatórios CSV, histórico de auditoria, usuários e permissões, backup/restauração, busca global, perfil com foto e persistência local**.
+
+Também desenvolvi uma camada de experiência de uso que inclui **modo dia/noite, cinco paletas de cor persistentes, layout responsivo, tooltips, feedback por toast, impressão otimizada e adaptação de menus por permissão**.
+
+**Principais pontos técnicos:**
+
+- HTML5 + CSS3 + JavaScript sem framework
+- arquitetura local-first com `localStorage` e `sessionStorage`
+- autenticação local, hash de senha e bloqueio temporário após tentativas repetidas
+- controle de acesso por perfil
+- busca com normalização, prefixos e tokens
+- normalização de profissões para evitar indicadores fragmentados
+- detecção de possíveis candidatos duplicados
+- geração de CSV e backup JSON
+- auditoria de operações com data, hora e responsável
+- redimensionamento e compressão de foto via Canvas API
+- responsividade e temas com CSS custom properties
+
+> A base operacional original contém dados de terceiros. Por privacidade, o portfólio publica o **case técnico detalhado**, não os contatos reais utilizados pela pessoa que recebeu a ferramenta.
+
 ### [LeadFlow Local-First](https://github.com/berger33/leadflow-local-first)
 
 Protótipo de infraestrutura local-first para experimentos com automação de atendimento, combinando **WhatsApp via WAHA**, **modelos locais via Ollama** e **Docker Compose**. O objetivo é estudar arquiteturas em que processamento e dados possam permanecer sob maior controle local.
@@ -85,6 +109,8 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 | Backend / API | FastAPI, Uvicorn, REST |
 | Inteligência Artificial | LangChain, RAG, agentes, recuperação documental |
 | Dados | Pandas, CSV, PyPDF |
+| Front-end / produto | HTML5, CSS3, JavaScript, responsive design |
+| Persistência local | localStorage, sessionStorage, JSON |
 | Infraestrutura | Docker, Docker Compose |
 | Engenharia | Git, GitHub, Pytest, GitHub Actions |
 | Ferramentas / estudos | Ollama, automação local-first |
