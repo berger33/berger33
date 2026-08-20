@@ -18,7 +18,7 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 - **Dados:** Pandas, CSV, processamento e recuperação de informação
 - **Infraestrutura:** Docker, Docker Compose e fundamentos de deploy em nuvem
 - **Qualidade:** Git, GitHub, testes automatizados, CI e documentação técnica
-- **Idiomas:** Inglês avançado e espanhol básico
+- **Idiomas:** Inglês avançado (C1) e espanhol básico
 
 ---
 
