@@ -106,6 +106,18 @@ Também mantenho repositórios de **estudo, exercícios e forks**. Para avaliaç
 
 ---
 
+## Atividade no GitHub
+
+<p align="center">
+  <a href="https://github.com/berger33?tab=overview&from=2026-01-01&to=2026-12-31">
+    <img src="https://github-readme-activity-graph.vercel.app/graph?username=berger33&theme=github-compact&hide_border=true&area=true" alt="Gráfico de atividade e commits de William Berger no GitHub">
+  </a>
+</p>
+
+> O gráfico acima acompanha minha atividade pública no GitHub. O histórico detalhado de cada projeto pode ser consultado diretamente na aba **Commits** dos respectivos repositórios.
+
+---
+
 ## Contato profissional
 
 A melhor forma de conhecer minha trajetória, formação, experiência e certificações é pelo meu **[LinkedIn](https://www.linkedin.com/in/william-m-berger/)**.
