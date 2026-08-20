@@ -25,7 +25,7 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 ## Formação em destaque
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/berger33/berger33/main/assets/badge-one-ia.webp" width="170" alt="Badge Oracle Next Education - ONE - Agente de IA e RAG">
+  <img src="./assets/badge-one-ia.svg" width="620" alt="Oracle Next Education - ONE - Inteligência Artificial, Agentes e RAG">
 </p>
 
 <p align="center"><strong>Oracle Next Education (ONE) · Inteligência Artificial · Agentes e RAG</strong></p>
@@ -124,10 +124,10 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 ## Linguagens utilizadas no GitHub
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=berger33&layout=compact&langs_count=10&theme=github_dark&hide_border=true&card_width=520" alt="Distribuição automática das linguagens utilizadas nos repositórios públicos de William Berger">
+  <img src="./assets/languages.svg" width="720" alt="Distribuição automática das linguagens utilizadas nos repositórios públicos autorais de William Berger">
 </p>
 
-> O painel é atualizado automaticamente a partir dos repositórios públicos e representa a distribuição de código detectada pelo GitHub. Ele não deve ser interpretado isoladamente como nível de proficiência em cada linguagem.
+> Este painel é gerado dentro do próprio repositório por **GitHub Actions**, usando os dados de linguagens detectados pelo GitHub. Ele é atualizado automaticamente, considera repositórios públicos autorais e exclui forks e repositórios arquivados para evitar distorções.
 
 ---
 
