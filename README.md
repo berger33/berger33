@@ -39,7 +39,9 @@ A formação ONE complementa meus projetos práticos em IA aplicada, especialmen
 
 ### [Aurora Moda Online — Agente Inteligente - Projeto Oracle Next Education](https://github.com/berger33/Projeto)
 
-Projeto autoral desenvolvido para resolver um problema real de atendimento em e-commerce. O agente responde perguntas sobre compras, pagamentos, entregas, privacidade e devoluções usando exclusivamente uma base documental em PDF e CSV.
+**[▶ Abrir demo online](https://htmlpreview.github.io/?https://github.com/berger33/Projeto/blob/main/demo/index.html)** · **[⬇ Baixar projeto](https://github.com/berger33/Projeto/archive/refs/heads/main.zip)** · **[📂 Ver repositório](https://github.com/berger33/Projeto)**
+
+Projeto autoral desenvolvido para resolver um problema real de atendimento em e-commerce. O agente responde perguntas sobre compras, pagamentos, entregas, privacidade e devoluções usando exclusivamente uma base documental em PDF e CSV. A demo pública permite testar o comportamento documental imediatamente no navegador, incluindo fontes e recusa de perguntas fora da base.
 
 **Principais pontos técnicos:**
 
@@ -58,9 +60,11 @@ Projeto autoral desenvolvido para resolver um problema real de atendimento em e-
 
 ### [LeadFlow Local-First — Assistente IA no WhatsApp](https://github.com/berger33/leadflow-local-first)
 
-**Assistente pessoal local-first em versão 1.0**, projetado para rodar no computador do usuário e conversar pelo WhatsApp sem depender de API paga de LLM. O sistema combina **Ollama, FastAPI, WAHA, n8n, pesquisa web e Gmail** em uma arquitetura Docker reproduzível.
+**[▶ Abrir demo interativa](https://htmlpreview.github.io/?https://github.com/berger33/leadflow-local-first/blob/main/demo/index.html)** · **[⬇ Baixar projeto](https://github.com/berger33/leadflow-local-first/archive/refs/heads/main.zip)** · **[📂 Ver repositório](https://github.com/berger33/leadflow-local-first)**
 
-A resposta passa por **dois agentes independentes**: o primeiro interpreta e responde; o segundo recebe a pergunta original, a resposta preliminar e as fontes utilizadas para verificar se a intenção foi compreendida, se o conteúdo está aderente ao pedido e se afirmações atuais têm suporte. Quando encontra problemas, o validador devolve uma versão corrigida antes do envio ao WhatsApp.
+**Assistente pessoal local-first em versão 1.0**, projetado para rodar no computador do usuário e conversar pelo WhatsApp sem depender de API paga de LLM. O sistema combina **Ollama, FastAPI, WAHA, n8n, pesquisa web e Gmail** em uma arquitetura Docker reproduzível. A demo permite navegar pelo fluxo, testar `/web` e `/local`, acompanhar os dois agentes e gerar uma prévia de relatório com pesquisa pública de tecnologia.
+
+A resposta completa passa por **dois agentes independentes**: o primeiro interpreta e responde; o segundo recebe a pergunta original, a resposta preliminar e as fontes utilizadas para verificar se a intenção foi compreendida, se o conteúdo está aderente ao pedido e se afirmações atuais têm suporte. Quando encontra problemas, o validador devolve uma versão corrigida antes do envio ao WhatsApp.
 
 **Principais pontos técnicos:**
 
@@ -75,17 +79,17 @@ A resposta passa por **dois agentes independentes**: o primeiro interpreta e res
 - envio automático de relatório por Gmail após autorização do usuário;
 - resumo diário opcional também pelo WhatsApp;
 - Docker Compose com Ollama, WAHA, n8n e API em um único stack;
-- instalador/inicializador Windows, diagnóstico, documentação, testes e GitHub Actions.
+- inicializador Windows, diagnóstico, documentação, testes e GitHub Actions.
 
 > O projeto foi estruturado para que outra pessoa possa baixar, configurar seus próprios acessos e executar o stack localmente com Docker Desktop.
 
 ### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/ACESSO.md)
 
-**Projeto de fim de semana criado para ajudar uma profissional de RH em uma necessidade real.** Transformei um fluxo espalhado entre contatos, vagas e acompanhamento manual em uma aplicação portátil que funciona sem instalação de servidor ou banco externo.
-
 **[▶ Abrir demo online](https://htmlpreview.github.io/?https://github.com/berger33/berger33/blob/main/portfolio/chs-recruta/app/CHS-Recruta-Demo.html)** · **[⬇ Baixar versão portátil](https://htmlpreview.github.io/?https://github.com/berger33/berger33/blob/main/portfolio/chs-recruta/app/download.html)** · **[📘 Ver case técnico](portfolio/chs-recruta/README.md)**
 
 **Credenciais da demonstração:** usuário `demo` · senha `demo123` · perfil Administradora.
+
+**Projeto de fim de semana criado para ajudar uma profissional de RH em uma necessidade real.** Transformei um fluxo espalhado entre contatos, vagas e acompanhamento manual em uma aplicação portátil que funciona sem instalação de servidor ou banco externo.
 
 O sistema reúne **dashboard, banco de talentos, vagas, triagem, matching por profissão, funil de contratação, financeiro, relatórios CSV, histórico de auditoria, usuários e permissões, backup/restauração, busca global, perfil com foto e persistência local**.
 
