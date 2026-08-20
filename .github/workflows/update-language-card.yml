@@ -1,0 +1,145 @@
+name: Atualizar painel de linguagens
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - 'assets/languages.svg'
+  schedule:
+    - cron: '17 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-language-card:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Gerar painel a partir da API do GitHub
+        uses: actions/github-script@v7
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const owner = context.repo.owner;
+            const repoName = context.repo.repo;
+            const { data: repository } = await github.rest.repos.get({ owner, repo: repoName });
+            const branch = repository.default_branch;
+
+            const repos = await github.paginate(github.rest.repos.listForUser, {
+              username: owner,
+              type: 'owner',
+              per_page: 100
+            });
+
+            const publicAuthorRepos = repos.filter(r => !r.private && !r.fork && !r.archived);
+            const totals = {};
+
+            for (const repo of publicAuthorRepos) {
+              try {
+                const { data: languages } = await github.rest.repos.listLanguages({
+                  owner,
+                  repo: repo.name
+                });
+                for (const [language, bytes] of Object.entries(languages)) {
+                  totals[language] = (totals[language] || 0) + bytes;
+                }
+              } catch (error) {
+                core.warning(`Não foi possível ler linguagens de ${repo.name}: ${error.message}`);
+              }
+            }
+
+            const entries = Object.entries(totals).sort((a, b) => b[1] - a[1]);
+            const grandTotal = entries.reduce((sum, [, bytes]) => sum + bytes, 0);
+            const top = entries.slice(0, 8);
+            const otherBytes = entries.slice(8).reduce((sum, [, bytes]) => sum + bytes, 0);
+            if (otherBytes > 0) top.push(['Outros', otherBytes]);
+
+            const colors = {
+              Python: '#3572A5',
+              JavaScript: '#f1e05a',
+              TypeScript: '#3178c6',
+              HTML: '#e34c26',
+              CSS: '#563d7c',
+              Java: '#b07219',
+              'C#': '#178600',
+              'C++': '#f34b7d',
+              C: '#555555',
+              PHP: '#4F5D95',
+              Shell: '#89e051',
+              Dockerfile: '#384d54',
+              'Jupyter Notebook': '#DA5B0B',
+              Vue: '#41b883',
+              Ruby: '#701516',
+              Go: '#00ADD8',
+              Rust: '#dea584',
+              Kotlin: '#A97BFF',
+              Swift: '#F05138',
+              Dart: '#00B4AB',
+              Outros: '#8b949e'
+            };
+
+            const escapeXml = value => String(value)
+              .replace(/&/g, '&amp;')
+              .replace(/</g, '&lt;')
+              .replace(/>/g, '&gt;')
+              .replace(/"/g, '&quot;')
+              .replace(/'/g, '&apos;');
+
+            const width = 720;
+            const rowHeight = 38;
+            const rows = Math.max(top.length, 1);
+            const height = 145 + rows * rowHeight + 48;
+            const barX = 238;
+            const barWidth = 420;
+
+            const rowSvg = grandTotal === 0
+              ? `<text x="360" y="155" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#8b949e">Nenhum dado de linguagem encontrado.</text>`
+              : top.map(([language, bytes], index) => {
+                  const pct = bytes / grandTotal * 100;
+                  const y = 123 + index * rowHeight;
+                  const fill = colors[language] || '#58a6ff';
+                  const filled = Math.max(2, barWidth * pct / 100);
+                  return `
+                    <circle cx="43" cy="${y - 5}" r="6" fill="${fill}"/>
+                    <text x="58" y="${y}" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">${escapeXml(language)}</text>
+                    <text x="218" y="${y}" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">${pct.toFixed(1)}%</text>
+                    <rect x="${barX}" y="${y - 13}" width="${barWidth}" height="12" rx="6" fill="#21262d"/>
+                    <rect x="${barX}" y="${y - 13}" width="${filled.toFixed(1)}" height="12" rx="6" fill="${fill}"/>
+                  `;
+                }).join('');
+
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}" role="img" aria-labelledby="title desc">
+              <title id="title">Linguagens utilizadas no GitHub</title>
+              <desc id="desc">Distribuição automática das linguagens em repositórios públicos autorais de ${escapeXml(owner)}, com forks e repositórios arquivados excluídos.</desc>
+              <rect x="1" y="1" width="718" height="${height - 2}" rx="18" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+              <text x="34" y="48" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#f0f6fc">Linguagens utilizadas no GitHub</text>
+              <text x="34" y="76" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8b949e">Atualização automática · repositórios públicos autorais · forks excluídos</text>
+              <line x1="34" y1="94" x2="686" y2="94" stroke="#21262d"/>
+              ${rowSvg}
+              <line x1="34" y1="${height - 40}" x2="686" y2="${height - 40}" stroke="#21262d"/>
+              <text x="34" y="${height - 17}" font-family="Arial, Helvetica, sans-serif" font-size="12" fill="#6e7681">Fonte: GitHub API / Linguist · ${publicAuthorRepos.length} repositório(s) analisado(s)</text>
+            </svg>`;
+
+            let sha;
+            try {
+              const { data: current } = await github.rest.repos.getContent({
+                owner,
+                repo: repoName,
+                path: 'assets/languages.svg',
+                ref: branch
+              });
+              sha = current.sha;
+            } catch (error) {
+              if (error.status !== 404) throw error;
+            }
+
+            await github.rest.repos.createOrUpdateFileContents({
+              owner,
+              repo: repoName,
+              path: 'assets/languages.svg',
+              message: 'chore(profile): refresh language panel [skip ci]',
+              content: Buffer.from(svg, 'utf8').toString('base64'),
+              sha,
+              branch
+            });
