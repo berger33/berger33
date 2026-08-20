@@ -1,4 +1,4 @@
- # William de Melo Berger
+# William de Melo Berger
 
 **Inteligência Artificial aplicada | Desenvolvimento Python | Backend | Automação**
 
@@ -13,9 +13,10 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 ## Visão rápida
 
 - **Foco atual:** Python, backend e Inteligência Artificial aplicada
-- **IA aplicada:** LangChain, RAG, processamento documental e agentes
+- **IA aplicada:** LangChain, RAG, agentes locais, Ollama e validação multiagente
 - **Backend:** FastAPI, APIs REST e organização de serviços
-- **Dados:** Pandas, CSV, processamento e recuperação de informação
+- **Dados:** Pandas, CSV, SQLite, processamento e recuperação de informação
+- **Automação:** n8n, webhooks, integrações e tarefas programadas
 - **Infraestrutura:** Docker, Docker Compose e fundamentos de deploy em nuvem
 - **Qualidade:** Git, GitHub, testes automatizados, CI e documentação técnica
 - **Idiomas:** Inglês avançado (C1) e espanhol básico
@@ -53,7 +54,30 @@ Projeto autoral desenvolvido para resolver um problema real de atendimento em e-
 - Docker e Docker Compose
 - configuração para OCI Compute e Render
 
-> Este é atualmente o projeto que melhor representa meu processo completo de desenvolvimento: problema → arquitetura → implementação → testes → documentação → preparação para deploy.
+> Este projeto demonstra o ciclo problema → arquitetura → implementação → testes → documentação → preparação para deploy.
+
+### [LeadFlow Local-First — Assistente IA no WhatsApp](https://github.com/berger33/leadflow-local-first)
+
+**Assistente pessoal local-first em versão 1.0**, projetado para rodar no computador do usuário e conversar pelo WhatsApp sem depender de API paga de LLM. O sistema combina **Ollama, FastAPI, WAHA, n8n, pesquisa web e Gmail** em uma arquitetura Docker reproduzível.
+
+A resposta passa por **dois agentes independentes**: o primeiro interpreta e responde; o segundo recebe a pergunta original, a resposta preliminar e as fontes utilizadas para verificar se a intenção foi compreendida, se o conteúdo está aderente ao pedido e se afirmações atuais têm suporte. Quando encontra problemas, o validador devolve uma versão corrigida antes do envio ao WhatsApp.
+
+**Principais pontos técnicos:**
+
+- LLM executada localmente com Ollama;
+- integração bidirecional com WhatsApp via WAHA e webhooks;
+- FastAPI como camada de aplicação testável entre WhatsApp, n8n e LLM;
+- pesquisa atual na internet via metabuscadores, com fontes anexadas ao contexto;
+- arquitetura dual-agent para revisão antes da resposta final;
+- memória curta e persistente por conversa com SQLite;
+- n8n para agendamento de pesquisas e automações;
+- workflow diário de **10 notícias quentes de tecnologia** com relatório HTML;
+- envio automático de relatório por Gmail após autorização do usuário;
+- resumo diário opcional também pelo WhatsApp;
+- Docker Compose com Ollama, WAHA, n8n e API em um único stack;
+- instalador/inicializador Windows, diagnóstico, documentação, testes e GitHub Actions.
+
+> O projeto foi estruturado para que outra pessoa possa baixar, configurar seus próprios acessos e executar o stack localmente com Docker Desktop.
 
 ### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/ACESSO.md)
 
@@ -83,12 +107,6 @@ Também desenvolvi uma camada de experiência de uso que inclui **modo dia/noite
 
 > A demo pública usa dados fictícios. A base operacional original contém dados de terceiros e não foi publicada por privacidade.
 
-### [LeadFlow Local-First](https://github.com/berger33/leadflow-local-first)
-
-Protótipo de infraestrutura local-first para experimentos com automação de atendimento, combinando **WhatsApp via WAHA**, **modelos locais via Ollama** e **Docker Compose**. O objetivo é estudar arquiteturas em que processamento e dados possam permanecer sob maior controle local.
-
-**Em evolução:** integração entre os serviços, persistência e camada de aplicação.
-
 ---
 
 ## Como eu trabalho
@@ -110,14 +128,14 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 | Área | Tecnologias |
 | --- | --- |
 | Linguagem principal | Python |
-| Backend / API | FastAPI, Uvicorn, REST |
-| Inteligência Artificial | LangChain, RAG, agentes, recuperação documental |
-| Dados | Pandas, CSV, PyPDF |
+| Backend / API | FastAPI, Uvicorn, REST, Webhooks |
+| Inteligência Artificial | LangChain, RAG, Ollama, agentes, validação multiagente |
+| Dados | Pandas, CSV, PyPDF, SQLite, JSON |
+| Automação / integração | n8n, WAHA, Gmail, HTTP APIs |
 | Front-end / produto | HTML5, CSS3, JavaScript, responsive design |
-| Persistência local | localStorage, sessionStorage, JSON |
+| Persistência local | SQLite, localStorage, sessionStorage, volumes Docker |
 | Infraestrutura | Docker, Docker Compose |
 | Engenharia | Git, GitHub, Pytest, GitHub Actions |
-| Ferramentas / estudos | Ollama, automação local-first |
 
 ---
 
