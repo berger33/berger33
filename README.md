@@ -22,6 +22,18 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 
 ---
 
+## Formação em destaque
+
+<p align="center">
+  <img src="assets/badge-one-ia.webp" width="170" alt="Badge Oracle Next Education - ONE - Agente de IA e RAG">
+</p>
+
+<p align="center"><strong>Oracle Next Education (ONE) · Inteligência Artificial · Agentes e RAG</strong></p>
+
+A formação ONE complementa meus projetos práticos em IA aplicada, especialmente construção de agentes, recuperação de contexto e soluções baseadas em documentação.
+
+---
+
 ## Projetos em destaque
 
 ### [Aurora Moda Online — Agente Inteligente](https://github.com/berger33/Projeto)
