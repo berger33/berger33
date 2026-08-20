@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="250" viewBox="0 0 760 250" role="img" aria-labelledby="title desc">
+  <title id="title">Oracle Next Education - Inteligência Artificial, Agentes e RAG</title>
+  <desc id="desc">Badge de formação ONE para Inteligência Artificial, Agentes e RAG.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/>
+      <stop offset="1" stop-color="#0b1220"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ff3b30"/>
+      <stop offset="1" stop-color="#ff7a59"/>
+    </linearGradient>
+  </defs>
+  <rect x="2" y="2" width="756" height="246" rx="28" fill="url(#bg)" stroke="#30363d" stroke-width="4"/>
+  <circle cx="125" cy="125" r="82" fill="#171f2e" stroke="url(#accent)" stroke-width="6"/>
+  <text x="125" y="112" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="46" font-weight="700" fill="#ffffff">ONE</text>
+  <text x="125" y="144" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#ff6658">ORACLE NEXT</text>
+  <text x="125" y="163" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="700" letter-spacing="2" fill="#ff6658">EDUCATION</text>
+  <text x="240" y="78" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" letter-spacing="1.4" fill="#ff6658">FORMAÇÃO EM DESTAQUE</text>
+  <text x="240" y="118" font-family="Arial, Helvetica, sans-serif" font-size="30" font-weight="700" fill="#ffffff">Inteligência Artificial</text>
+  <text x="240" y="153" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="600" fill="#d6deeb">Agentes &amp; RAG</text>
+  <rect x="240" y="178" width="390" height="2" rx="1" fill="#30363d"/>
+  <text x="240" y="210" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#9da7b3">Oracle Next Education · ONE</text>
+</svg>
