@@ -19,6 +19,7 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 - **Automação:** n8n, webhooks, Gmail, Google Calendar, WhatsApp/WAHA e Human-in-the-loop
 - **Infraestrutura:** Docker, Docker Compose e fundamentos de deploy em nuvem
 - **Qualidade:** Git, GitHub, testes automatizados, smoke tests, CI e documentação técnica
+- **Produto / DX:** demos navegáveis, instaladores guiados e onboarding orientado ao usuário
 - **Idiomas:** Inglês avançado (C1) e espanhol básico
 
 ---
@@ -62,11 +63,13 @@ Projeto autoral desenvolvido para resolver um problema real de atendimento em e-
 
 **[▶ Abrir demo interativa](https://htmlpreview.github.io/?https://github.com/berger33/leadflow-local-first/blob/main/demo/index.html)** · **[⬇ Baixar projeto](https://github.com/berger33/leadflow-local-first/archive/refs/heads/main.zip)** · **[📂 Ver repositório](https://github.com/berger33/leadflow-local-first)**
 
-**Sistema agêntico local-first em versão 2.1**, evoluído a partir do LeadFlow para uma arquitetura centrada no **n8n Advanced AI**, LLM local e execução segura de ferramentas reais. O sistema combina **Ollama, n8n, WAHA/WhatsApp, Gmail, Google Calendar e PostgreSQL** em um stack Docker reproduzível.
+**Sistema agêntico local-first em versão 2.2**, evoluído a partir do LeadFlow para uma arquitetura centrada em **n8n Advanced AI, Function Calling, LLM local e execução segura de ferramentas reais**. O sistema combina Ollama, n8n, WAHA/WhatsApp, Gmail, Google Calendar e PostgreSQL em um stack Docker reproduzível.
 
-O **Agente Orquestrador** interpreta o pedido e utiliza Function Calling para escolher entre ferramentas como `ler_email`, `resumir_email`, `apagar_email`, `enviar_whatsapp` e `criar_evento`. Ações críticas não são executadas silenciosamente: exclusão de e-mail e envio de WhatsApp entram em **Human-in-the-loop**, pausam em um nó `Wait` e exigem aprovação humana explícita.
+O **Agente Orquestrador** interpreta o pedido e escolhe ferramentas como `ler_email`, `resumir_email`, `apagar_email`, `enviar_whatsapp` e `criar_evento`. Ações críticas entram em **Human-in-the-loop**, pausam em um nó `Wait` e exigem aprovação humana antes do efeito externo.
 
 Depois da execução, um segundo **Agente QA Validador**, sem acesso a ferramentas destrutivas, revisa aderência ao pedido, consistência com resultados observáveis e respeito aos controles de segurança antes da resposta final.
+
+A versão 2.2 também trata instalação como parte do produto: um **assistente visual local e responsivo** coleta em uma única tela o acesso local do n8n, modelos, e-mail de aprovação e, opcionalmente, Google OAuth Client ID/Secret. O bootstrap gera os segredos internos, instala/verifica os serviços, baixa a LLM, cria o proprietário n8n, prepara a credencial Ollama, importa o workflow e configura referências automaticamente. Depois disso, ficam manuais somente os consentimentos que pertencem ao usuário: OAuth do Google e QR Code do WhatsApp.
 
 **Principais pontos técnicos:**
 
@@ -75,15 +78,18 @@ Depois da execução, um segundo **Agente QA Validador**, sem acesso a ferrament
 - LLM local com Ollama/Qwen3;
 - segundo agente independente para QA da resposta;
 - Human-in-the-loop para ações destrutivas ou de comunicação externa;
-- Gmail e Google Calendar via OAuth2 do próprio usuário;
+- Gmail e Google Calendar via OAuth2;
 - integração WhatsApp via WAHA e webhooks;
-- PostgreSQL para estado e histórico de execução do n8n;
+- PostgreSQL para estado e histórico do n8n;
 - audit trail de inputs, tools, parâmetros, resultados e outputs observáveis;
 - Docker Compose com interfaces administrativas limitadas a localhost;
-- bootstrap Windows autorreparável que gera segredos, valida serviços, baixa/verifica o modelo e importa o workflow;
-- diagnóstico de instalação e GitHub Actions com validação estrutural e smoke test Docker.
+- instalador visual profissional servido apenas localmente;
+- criação assistida do proprietário n8n sem persistir a senha no instalador;
+- configuração automática da credencial Ollama e preparação opcional de Gmail/Calendar;
+- bootstrap autorreparável e idempotente;
+- GitHub Actions com validação estrutural e smoke test Docker do caminho de primeira instalação.
 
-> O projeto foi estruturado para que outra pessoa possa baixar, iniciar o stack com `INICIAR_WINDOWS.bat` e só precise autorizar as integrações vinculadas às suas próprias contas. A demo pública permite explorar Function Calling, dual-agent e aprovação humana sem fornecer credenciais reais.
+> O objetivo de entrega é que outra pessoa possa baixar o projeto, abrir o Docker Desktop, executar `INSTALAR_WINDOWS.bat`, preencher uma tela e deixar para o sistema toda a configuração técnica reproduzível.
 
 ### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/ACESSO.md)
 
@@ -125,7 +131,7 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 4. implementação incremental com histórico Git;
 5. testes e validação;
 6. README que permita outra pessoa executar o projeto;
-7. empacotamento e preparação para deploy quando aplicável.
+7. empacotamento, onboarding e preparação para deploy quando aplicável.
 
 ---
 
@@ -138,9 +144,9 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 | Inteligência Artificial | LangChain, RAG, Ollama, agentes, Function Calling, validação multiagente |
 | Dados | Pandas, CSV, PyPDF, SQLite, PostgreSQL, JSON |
 | Automação / integração | n8n, WAHA, Gmail, Google Calendar, HTTP APIs, Human-in-the-loop |
-| Front-end / produto | HTML5, CSS3, JavaScript, responsive design |
+| Front-end / produto | HTML5, CSS3, JavaScript, responsive design, setup wizard |
 | Persistência local | SQLite, localStorage, sessionStorage, PostgreSQL e volumes Docker |
-| Infraestrutura | Docker, Docker Compose |
+| Infraestrutura | Docker, Docker Compose, PowerShell |
 | Engenharia | Git, GitHub, Pytest, smoke tests, GitHub Actions |
 
 ---
