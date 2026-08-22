@@ -13,12 +13,12 @@ Busco oportunidades em **desenvolvimento júnior, Python/backend e aplicações 
 ## Visão rápida
 
 - **Foco atual:** Python, backend e Inteligência Artificial aplicada
-- **IA aplicada:** LangChain, RAG, agentes locais, Ollama e validação multiagente
+- **IA aplicada:** LangChain, RAG, Ollama, agentes, Function Calling e validação multiagente
 - **Backend:** FastAPI, APIs REST e organização de serviços
-- **Dados:** Pandas, CSV, SQLite, processamento e recuperação de informação
-- **Automação:** n8n, webhooks, integrações e tarefas programadas
+- **Dados:** Pandas, CSV, SQLite, PostgreSQL, processamento e recuperação de informação
+- **Automação:** n8n, webhooks, Gmail, Google Calendar, WhatsApp/WAHA e Human-in-the-loop
 - **Infraestrutura:** Docker, Docker Compose e fundamentos de deploy em nuvem
-- **Qualidade:** Git, GitHub, testes automatizados, CI e documentação técnica
+- **Qualidade:** Git, GitHub, testes automatizados, smoke tests, CI e documentação técnica
 - **Idiomas:** Inglês avançado (C1) e espanhol básico
 
 ---
@@ -58,30 +58,32 @@ Projeto autoral desenvolvido para resolver um problema real de atendimento em e-
 
 > Este projeto demonstra o ciclo problema → arquitetura → implementação → testes → documentação → preparação para deploy.
 
-### [LeadFlow Local-First — Assistente IA no WhatsApp](https://github.com/berger33/leadflow-local-first)
+### [Sistema Agêntico n8n WhatsApp+Email](https://github.com/berger33/leadflow-local-first)
 
 **[▶ Abrir demo interativa](https://htmlpreview.github.io/?https://github.com/berger33/leadflow-local-first/blob/main/demo/index.html)** · **[⬇ Baixar projeto](https://github.com/berger33/leadflow-local-first/archive/refs/heads/main.zip)** · **[📂 Ver repositório](https://github.com/berger33/leadflow-local-first)**
 
-**Assistente pessoal local-first em versão 1.0**, projetado para rodar no computador do usuário e conversar pelo WhatsApp sem depender de API paga de LLM. O sistema combina **Ollama, FastAPI, WAHA, n8n, pesquisa web e Gmail** em uma arquitetura Docker reproduzível. A demo permite navegar pelo fluxo, testar `/web` e `/local`, acompanhar os dois agentes e gerar uma prévia de relatório com pesquisa pública de tecnologia.
+**Sistema agêntico local-first em versão 2.1**, evoluído a partir do LeadFlow para uma arquitetura centrada no **n8n Advanced AI**, LLM local e execução segura de ferramentas reais. O sistema combina **Ollama, n8n, WAHA/WhatsApp, Gmail, Google Calendar e PostgreSQL** em um stack Docker reproduzível.
 
-A resposta completa passa por **dois agentes independentes**: o primeiro interpreta e responde; o segundo recebe a pergunta original, a resposta preliminar e as fontes utilizadas para verificar se a intenção foi compreendida, se o conteúdo está aderente ao pedido e se afirmações atuais têm suporte. Quando encontra problemas, o validador devolve uma versão corrigida antes do envio ao WhatsApp.
+O **Agente Orquestrador** interpreta o pedido e utiliza Function Calling para escolher entre ferramentas como `ler_email`, `resumir_email`, `apagar_email`, `enviar_whatsapp` e `criar_evento`. Ações críticas não são executadas silenciosamente: exclusão de e-mail e envio de WhatsApp entram em **Human-in-the-loop**, pausam em um nó `Wait` e exigem aprovação humana explícita.
+
+Depois da execução, um segundo **Agente QA Validador**, sem acesso a ferramentas destrutivas, revisa aderência ao pedido, consistência com resultados observáveis e respeito aos controles de segurança antes da resposta final.
 
 **Principais pontos técnicos:**
 
-- LLM executada localmente com Ollama;
-- integração bidirecional com WhatsApp via WAHA e webhooks;
-- FastAPI como camada de aplicação testável entre WhatsApp, n8n e LLM;
-- pesquisa atual na internet via metabuscadores, com fontes anexadas ao contexto;
-- arquitetura dual-agent para revisão antes da resposta final;
-- memória curta e persistente por conversa com SQLite;
-- n8n para agendamento de pesquisas e automações;
-- workflow diário de **10 notícias quentes de tecnologia** com relatório HTML;
-- envio automático de relatório por Gmail após autorização do usuário;
-- resumo diário opcional também pelo WhatsApp;
-- Docker Compose com Ollama, WAHA, n8n e API em um único stack;
-- inicializador Windows, diagnóstico, documentação, testes e GitHub Actions.
+- n8n Advanced AI como orquestrador central;
+- Function Calling com cinco contratos de ferramentas;
+- LLM local com Ollama/Qwen3;
+- segundo agente independente para QA da resposta;
+- Human-in-the-loop para ações destrutivas ou de comunicação externa;
+- Gmail e Google Calendar via OAuth2 do próprio usuário;
+- integração WhatsApp via WAHA e webhooks;
+- PostgreSQL para estado e histórico de execução do n8n;
+- audit trail de inputs, tools, parâmetros, resultados e outputs observáveis;
+- Docker Compose com interfaces administrativas limitadas a localhost;
+- bootstrap Windows autorreparável que gera segredos, valida serviços, baixa/verifica o modelo e importa o workflow;
+- diagnóstico de instalação e GitHub Actions com validação estrutural e smoke test Docker.
 
-> O projeto foi estruturado para que outra pessoa possa baixar, configurar seus próprios acessos e executar o stack localmente com Docker Desktop.
+> O projeto foi estruturado para que outra pessoa possa baixar, iniciar o stack com `INICIAR_WINDOWS.bat` e só precise autorizar as integrações vinculadas às suas próprias contas. A demo pública permite explorar Function Calling, dual-agent e aprovação humana sem fornecer credenciais reais.
 
 ### [CHS Recruta Portátil — Sistema de recrutamento local-first](portfolio/chs-recruta/ACESSO.md)
 
@@ -133,13 +135,13 @@ Nos projetos que considero de portfólio, procuro demonstrar mais do que código
 | --- | --- |
 | Linguagem principal | Python |
 | Backend / API | FastAPI, Uvicorn, REST, Webhooks |
-| Inteligência Artificial | LangChain, RAG, Ollama, agentes, validação multiagente |
-| Dados | Pandas, CSV, PyPDF, SQLite, JSON |
-| Automação / integração | n8n, WAHA, Gmail, HTTP APIs |
+| Inteligência Artificial | LangChain, RAG, Ollama, agentes, Function Calling, validação multiagente |
+| Dados | Pandas, CSV, PyPDF, SQLite, PostgreSQL, JSON |
+| Automação / integração | n8n, WAHA, Gmail, Google Calendar, HTTP APIs, Human-in-the-loop |
 | Front-end / produto | HTML5, CSS3, JavaScript, responsive design |
-| Persistência local | SQLite, localStorage, sessionStorage, volumes Docker |
+| Persistência local | SQLite, localStorage, sessionStorage, PostgreSQL e volumes Docker |
 | Infraestrutura | Docker, Docker Compose |
-| Engenharia | Git, GitHub, Pytest, GitHub Actions |
+| Engenharia | Git, GitHub, Pytest, smoke tests, GitHub Actions |
 
 ---
 
