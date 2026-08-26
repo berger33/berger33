@@ -20,13 +20,11 @@ Busco oportunidades como **Desenvolvedor Python/Backend Júnior**, incluindo tim
 
 ## Projetos para avaliação técnica
 
-### 1. CHS Recruta — Backend Python para uma necessidade real de RH
+### 1. [CHS Recruta](https://github.com/berger33/chs-recruta) — Backend Python para uma necessidade real de RH
 
-**[Case original](portfolio/chs-recruta/README.md)** · **[Nova arquitetura Python](portfolio/chs-recruta-python/README.md)**
+O CHS Recruta nasceu para resolver um problema real de RH: centralizar candidatos, vagas, triagem, funil, relatórios e histórico operacional. A evolução de portfólio migra o domínio para **Python + FastAPI + PostgreSQL**, com código modular, autenticação/RBAC, auditoria, testes, Docker e CI em repositório próprio.
 
-O CHS Recruta nasceu para resolver um problema real de uma profissional de RH: centralizar candidatos, vagas, triagem, funil, relatórios e histórico operacional. A versão original validou o produto como aplicação local-first; a evolução de portfólio migra o domínio para **Python + FastAPI + PostgreSQL**, com código modular e testável.
-
-**O que avaliar:** modelagem de domínio, API REST, validação, persistência, autenticação/RBAC, migrations, testes e decisões de produto.
+**O que avaliar:** modelagem de domínio, API REST, validação, persistência, autenticação/RBAC, testes, decisões de produto e infraestrutura.
 
 ### 2. [LeadFlow Local First](https://github.com/berger33/leadflow-local-first) — IA aplicada e integração
 
