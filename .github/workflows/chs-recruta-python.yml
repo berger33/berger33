@@ -19,6 +19,8 @@ jobs:
     defaults:
       run:
         working-directory: portfolio/chs-recruta-python
+    env:
+      PYTHONPATH: ${{ github.workspace }}/portfolio/chs-recruta-python
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -31,6 +33,6 @@ jobs:
       - name: Compile Python
         run: python -m compileall -q app tests
       - name: Run tests
-        run: pytest -q
+        run: python -m pytest -q
       - name: Validate Compose
         run: docker compose config --quiet
