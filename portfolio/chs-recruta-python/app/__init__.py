@@ -1,1 +1,0 @@
-"""CHS Recruta backend package."""
