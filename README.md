@@ -38,7 +38,7 @@ Plataforma local de automação com **FastAPI, PostgreSQL, MQTT, React e ESP32**
 
 **O que avaliar:** arquitetura de sistemas, backend, mensageria, testes, firmware e tratamento explícito de limites físicos.
 
-### 4. [Aurora Document RAG](https://github.com/berger33/aurora-document-rag) — retrieval e IA documental
+### 4. [Aurora Document RAG](https://github.com/berger33/Projeto) — retrieval e IA documental
 
 Assistente documental em Python/FastAPI para responder somente com base em PDFs e CSVs da aplicação. A arquitetura separa ingestão, embeddings, retrieval vetorial, geração, citações e evals, com opção de **RAG generativo local via Ollama** e modo offline reproduzível para CI.
 
