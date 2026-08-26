@@ -7,7 +7,7 @@ from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 
 from .database import Base, engine
-from .routers import candidates, operations, vacancies
+from .routers import auth, candidates, operations, users, vacancies
 
 ROOT = Path(__file__).resolve().parents[1]
 STATIC = ROOT / "static"
@@ -16,11 +16,13 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="CHS Recruta API",
     version="2.0.0",
-    description="Backend Python para recrutamento e seleção.",
+    description="Backend Python para recrutamento e seleção com RBAC, auditoria e PostgreSQL.",
 )
+app.include_router(auth.router)
 app.include_router(candidates.router)
 app.include_router(vacancies.router)
 app.include_router(operations.router)
+app.include_router(users.router)
 app.mount("/static", StaticFiles(directory=STATIC), name="static")
 
 
