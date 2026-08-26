@@ -10,7 +10,7 @@
         <text x="58" y="123" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">Python</text>
         <text x="218" y="123" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">74.4%</text>
         <rect x="238" y="110" width="420" height="12" rx="6" fill="#21262d"/>
-        <rect x="238" y="110" width="312.3" height="12" rx="6" fill="#3572A5"/>
+        <rect x="238" y="110" width="312.6" height="12" rx="6" fill="#3572A5"/>
       
         <circle cx="43" cy="156" r="6" fill="#3178c6"/>
         <text x="58" y="161" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">TypeScript</text>
@@ -28,7 +28,7 @@
         <text x="58" y="237" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">PowerShell</text>
         <text x="218" y="237" text-anchor="end" font-family="Arial, Helvetica, sans-serif" font-size="13" fill="#8b949e">4.2%</text>
         <rect x="238" y="224" width="420" height="12" rx="6" fill="#21262d"/>
-        <rect x="238" y="224" width="17.7" height="12" rx="6" fill="#58a6ff"/>
+        <rect x="238" y="224" width="17.6" height="12" rx="6" fill="#58a6ff"/>
       
         <circle cx="43" cy="270" r="6" fill="#e34c26"/>
         <text x="58" y="275" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="600" fill="#f0f6fc">HTML</text>
