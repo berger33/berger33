@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>CHS Recruta</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section id="login" class="card login-card">
+      <p class="eyebrow">CHS RECRUTA</p>
+      <h1>Gestão de recrutamento</h1>
+      <p class="muted">Backend Python + FastAPI + banco relacional.</p>
+      <form id="loginForm">
+        <label>Usuário<input id="username" value="demo" required></label>
+        <label>Senha<input id="password" type="password" value="demo12345" required></label>
+        <button>Entrar</button>
+      </form>
+      <p id="loginError" class="error" role="alert"></p>
+    </section>
+
+    <section id="app" hidden>
+      <header class="topbar">
+        <div><span class="eyebrow">CHS RECRUTA</span><strong id="who"></strong></div>
+        <nav>
+          <button data-view="dashboard">Dashboard</button>
+          <button data-view="candidates">Candidatos</button>
+          <button data-view="vacancies">Vagas</button>
+          <button data-view="audit">Auditoria</button>
+          <button id="logout" class="ghost">Sair</button>
+        </nav>
+      </header>
+
+      <section id="dashboard" class="view"></section>
+      <section id="candidates" class="view" hidden>
+        <div class="section-head"><div><p class="eyebrow">BANCO DE TALENTOS</p><h2>Candidatos</h2></div><input id="candidateSearch" placeholder="Buscar nome, profissão, cidade..."></div>
+        <form id="candidateForm" class="grid-form card">
+          <input name="name" placeholder="Nome" required>
+          <input name="profession" placeholder="Profissão" required>
+          <input name="city" placeholder="Cidade">
+          <input name="phone" placeholder="Telefone">
+          <input name="email" type="email" placeholder="E-mail">
+          <input name="recruiter" placeholder="Recrutador">
+          <button>Adicionar candidato</button>
+        </form>
+        <div id="candidateList" class="table-wrap"></div>
+      </section>
+
+      <section id="vacancies" class="view" hidden>
+        <div class="section-head"><div><p class="eyebrow">OPORTUNIDADES</p><h2>Vagas</h2></div></div>
+        <form id="vacancyForm" class="grid-form card">
+          <input name="code" placeholder="Código" required>
+          <input name="title" placeholder="Título" required>
+          <input name="profession" placeholder="Profissão" required>
+          <input name="city" placeholder="Cidade">
+          <input name="positions" type="number" min="1" value="1">
+          <input name="owner" placeholder="Responsável">
+          <button>Abrir vaga</button>
+        </form>
+        <div id="vacancyList" class="cards"></div>
+      </section>
+
+      <section id="audit" class="view" hidden><div class="section-head"><div><p class="eyebrow">RASTREABILIDADE</p><h2>Auditoria</h2></div></div><div id="auditList" class="table-wrap"></div></section>
+    </section>
+  </main>
+  <script src="/static/app.js"></script>
+</body>
+</html>
