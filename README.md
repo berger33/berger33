@@ -22,7 +22,7 @@ Busco oportunidades como **Desenvolvedor Python/Backend Júnior**, incluindo tim
 
 ### 1. [CHS Recruta](https://github.com/berger33/chs-recruta) — Backend Python para uma necessidade real de RH
 
-O CHS Recruta nasceu para resolver um problema real de RH: centralizar candidatos, vagas, triagem, funil, relatórios e histórico operacional. A evolução de portfólio migra o domínio para **Python + FastAPI + PostgreSQL**, com código modular, autenticação/RBAC, auditoria, testes, Docker e CI em repositório próprio.
+O CHS Recruta resolve um problema real de RH: centralizar candidatos, vagas, triagem, funil, relatórios e histórico operacional. A versão atual usa **Python + FastAPI + PostgreSQL**, com código modular, autenticação/RBAC, auditoria, testes, Docker e CI em repositório próprio.
 
 **O que avaliar:** modelagem de domínio, API REST, validação, persistência, autenticação/RBAC, testes, decisões de produto e infraestrutura.
 
@@ -38,9 +38,9 @@ Plataforma local de automação com **FastAPI, PostgreSQL, MQTT, React e ESP32**
 
 **O que avaliar:** arquitetura de sistemas, backend, mensageria, testes, firmware e tratamento explícito de limites físicos.
 
-### 4. [Aurora Document RAG](https://github.com/berger33/Projeto) — retrieval e IA documental
+### 4. [Aurora Document RAG](https://github.com/berger33/aurora-document-rag) — retrieval e IA documental
 
-Assistente documental em Python/FastAPI para responder somente com base em PDFs e CSVs da aplicação. A evolução técnica separa ingestão, embeddings, retrieval vetorial, geração, citações e evals, com opção de **RAG generativo local via Ollama** e modo offline reproduzível para CI.
+Assistente documental em Python/FastAPI para responder somente com base em PDFs e CSVs da aplicação. A arquitetura separa ingestão, embeddings, retrieval vetorial, geração, citações e evals, com opção de **RAG generativo local via Ollama** e modo offline reproduzível para CI.
 
 **O que avaliar:** Python, FastAPI, retrieval, interfaces de providers, recusa fora da base, fontes e testes de API/comportamento.
 
