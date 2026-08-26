@@ -9,6 +9,7 @@ Este arquivo registra apenas o que ainda depende de configuração administrativ
 - staging `portfolio/chs-recruta-python/` removido do repositório de perfil;
 - workflow antiga do staging removida;
 - perfil aponta diretamente para `berger33/chs-recruta`;
+- `berger33/Projeto` renomeado para `berger33/aurora-document-rag` e link do perfil atualizado;
 - LeadFlow evidence-first mesclado na `main`, com Behavior Evals e Docker smoke de primeira instalação validados;
 - healthcheck WAHA alinhado à configuração atual e importação n8n compatível com PostgreSQL;
 - ordem de apresentação no README: CHS Recruta, LeadFlow, Indoor Grow Automation e Aurora Document RAG;
@@ -16,7 +17,6 @@ Este arquivo registra apenas o que ainda depende de configuração administrativ
 
 ## Pendências administrativas confirmadas
 
-- o repositório de ID `624112510` ainda é retornado pela API do GitHub como `berger33/Projeto`; renomear para `berger33/aurora-document-rag` e só então atualizar o link do perfil para o novo slug;
 - excluir o repositório vazio duplicado `berger33/berger33-chs-recruta`;
 - aplicar descriptions, topics e pins abaixo;
 - só definir Homepage do CHS depois de um backend público passar no healthcheck externo.
