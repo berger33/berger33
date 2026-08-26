@@ -9,6 +9,8 @@ Este arquivo registra apenas o que ainda depende de configuração administrativ
 - staging `portfolio/chs-recruta-python/` removido do repositório de perfil;
 - workflow antiga do staging removida;
 - perfil aponta diretamente para `berger33/chs-recruta`;
+- LeadFlow evidence-first mesclado na `main`, com Behavior Evals e Docker smoke de primeira instalação validados;
+- healthcheck WAHA alinhado à configuração atual e importação n8n compatível com PostgreSQL;
 - ordem de apresentação no README: CHS Recruta, LeadFlow, Indoor Grow Automation e Aurora Document RAG;
 - PostgreSQL persistente do CHS provisionado separadamente para produção.
 
