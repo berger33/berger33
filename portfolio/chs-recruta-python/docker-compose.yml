@@ -1,0 +1,28 @@
+services:
+  db:
+    image: postgres:17-alpine
+    environment:
+      POSTGRES_DB: chs_recruta
+      POSTGRES_USER: chs
+      POSTGRES_PASSWORD: chs_dev_password
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U chs -d chs_recruta"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+    volumes:
+      - chs_db:/var/lib/postgresql/data
+
+  app:
+    build: .
+    environment:
+      DATABASE_URL: postgresql+psycopg://chs:chs_dev_password@db:5432/chs_recruta
+      SESSION_TTL_HOURS: "12"
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8000:8000"
+
+volumes:
+  chs_db:
