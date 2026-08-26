@@ -1,12 +1,16 @@
 from __future__ import annotations
 
-from datetime import datetime
+from datetime import UTC, datetime
 from enum import Enum
 
 from sqlalchemy import Boolean, DateTime, Enum as SAEnum, Float, ForeignKey, Integer, String, Text
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
 from .database import Base
+
+
+def utcnow() -> datetime:
+    return datetime.now(UTC).replace(tzinfo=None)
 
 
 class Role(str, Enum):
@@ -43,7 +47,7 @@ class User(Base):
     password_hash: Mapped[str] = mapped_column(String(255))
     role: Mapped[Role] = mapped_column(SAEnum(Role), default=Role.recruiter)
     active: Mapped[bool] = mapped_column(Boolean, default=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
 
 
 class Candidate(Base):
@@ -61,8 +65,8 @@ class Candidate(Base):
     status: Mapped[CandidateStatus] = mapped_column(SAEnum(CandidateStatus), default=CandidateStatus.novo, index=True)
     notes: Mapped[str] = mapped_column(Text, default="")
     vacancy_id: Mapped[int | None] = mapped_column(ForeignKey("vacancies.id"), nullable=True)
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
-    updated_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
+    updated_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow, onupdate=utcnow)
     vacancy: Mapped["Vacancy | None"] = relationship(back_populates="candidates")
 
 
@@ -76,7 +80,7 @@ class Vacancy(Base):
     positions: Mapped[int] = mapped_column(Integer, default=1)
     status: Mapped[VacancyStatus] = mapped_column(SAEnum(VacancyStatus), default=VacancyStatus.aberta, index=True)
     owner: Mapped[str] = mapped_column(String(120), default="")
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
     candidates: Mapped[list[Candidate]] = relationship(back_populates="vacancy")
 
 
@@ -96,4 +100,14 @@ class AuditLog(Base):
     entity_id: Mapped[str] = mapped_column(String(80), default="")
     actor: Mapped[str] = mapped_column(String(120), default="system")
     details: Mapped[str] = mapped_column(Text, default="")
-    created_at: Mapped[datetime] = mapped_column(DateTime, default=datetime.utcnow, index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow, index=True)
+
+
+class SessionToken(Base):
+    __tablename__ = "session_tokens"
+    id: Mapped[int] = mapped_column(Integer, primary_key=True)
+    token_hash: Mapped[str] = mapped_column(String(64), unique=True, index=True)
+    user_id: Mapped[int] = mapped_column(ForeignKey("users.id"), index=True)
+    expires_at: Mapped[datetime] = mapped_column(DateTime, index=True)
+    created_at: Mapped[datetime] = mapped_column(DateTime, default=utcnow)
+    user: Mapped[User] = relationship()
