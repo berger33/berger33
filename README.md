@@ -12,7 +12,7 @@ Busco oportunidades como **Desenvolvedor Python/Backend Júnior**, incluindo tim
 
 ## Stack principal
 
-`Python` · `FastAPI` · `PostgreSQL` · `SQL` · `Pytest` · `Docker` · `Git/GitHub`
+`Python` · `FastAPI` · `PostgreSQL` · `SQL` · `Pytest` · `Docker` · `Git/GitHub`.
 
 **Diferenciais:** APIs e integrações, RAG/LLMs locais, n8n, MQTT/IoT, GitHub Actions e desenvolvimento assistido por IA com revisão e testes.
 
