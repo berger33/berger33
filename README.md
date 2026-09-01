@@ -91,6 +91,20 @@ O painel é atualizado automaticamente por GitHub Actions e é apenas um indicad
 
 ---
 
+## Uso de IA no desenvolvimento
+
+<p align="center">
+  <img src="./assets/codex-usage-snapshot.svg" width="680" alt="Uso do Codex nos últimos 30 dias">
+</p>
+
+<p align="center">
+  <img src="./assets/chatgpt-usage-snapshot.svg" width="680" alt="Resumo de atividade no ChatGPT">
+</p>
+
+> **Atualização:** estes dois painéis são snapshots do uso exibido pelo ChatGPT/Codex em 01/09/2026. Diferentemente do painel de linguagens do GitHub, eles ainda não podem ser sincronizados integralmente por GitHub Actions usando uma API pública de uso pessoal do ChatGPT/Codex. Assim que houver uma fonte oficial programática para esses dados, a estrutura do perfil já está pronta para trocar os snapshots por atualização automática.
+
+---
+
 ## Contato
 
 [LinkedIn](https://www.linkedin.com/in/william-m-berger/) · [GitHub](https://github.com/berger33)
