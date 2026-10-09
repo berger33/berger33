@@ -1,3 +1,5 @@
+**Idioma / Language:** [🇧🇷 **Português**](./README.md) | [🇺🇸 English](./README.en.md)
+
 # William de Melo Berger
 
 **Python Backend Developer | FastAPI · SQL · Docker | Applied AI & Automation**
