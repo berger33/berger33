@@ -2,7 +2,7 @@
 
 # William de Melo Berger
 
-**Python Backend Developer | FastAPI · SQL · Docker | Applied AI & Automation**
+**Python Developer | FastAPI · SQL · Docker | Applied AI & Automation**
 
 Desenvolvo software com foco em **Python e backend**, transformando problemas reais em APIs, automações e aplicações testáveis. IA aplicada e integração entre sistemas são meus principais diferenciais, mas procuro manter os fundamentos de engenharia visíveis no código: modelagem, contratos de API, persistência, testes, CI, segurança e documentação reproduzível.
 
