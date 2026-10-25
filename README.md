@@ -1,6 +1,6 @@
 **Idioma / Language:** [<img src="./assets/flags/br.svg" alt="Brasil" width="20" height="14" valign="middle"> **Português**](./README.md) | [<img src="./assets/flags/us.svg" alt="USA" width="27" height="14" valign="middle"> English](./README.en.md)
 
-# William de Melo Berger
+# William M. Berger
 
 **Python Developer | FastAPI · SQL · Docker | Applied AI & Automation**
 
