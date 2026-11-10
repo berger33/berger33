@@ -1,8 +1,9 @@
-**Idioma / Language:** [<img src="./assets/flags/br.svg" alt="Brasil" width="20" height="14" valign="middle"> **Português**](./README.md) | [<img src="./assets/flags/us.svg" alt="USA" width="27" height="14" valign="middle"> English](./README.en.md)
+I**Idioma / Language:** [<img src="./assets/flags/br.svg" alt="Brasil" width="20" height="14" valign="middle"> **Português**](./README.md) | [<img src="./assets/flags/us.svg" alt="USA" width="27" height="14" valign="middle"> English](./README.en.md)
 
 # William M. Berger
 
 **Python Developer | FastAPI · SQL · Docker | Applied AI & Automation**
+
 
 Desenvolvo software com foco em **Python e backend**, transformando problemas reais em APIs, automações e aplicações testáveis. IA aplicada e integração entre sistemas são meus principais diferenciais, mas procuro manter os fundamentos de engenharia visíveis no código: modelagem, contratos de API, persistência, testes, CI, segurança e documentação reproduzível.
 
