@@ -20,7 +20,7 @@ Busco oportunidades como **Desenvolvedor Python/Backend Júnior**, incluindo tim
 
 ---
 
-## Projetos para avaliação técnica
+## Projetos para avaliação técnica. 
 
 ### 1. [CHS Recruta](https://github.com/berger33/chs-recruta) — Backend Python para uma necessidade real de RH
 
