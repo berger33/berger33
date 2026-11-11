@@ -2,6 +2,7 @@ I**Idioma / Language:** [<img src="./assets/flags/br.svg" alt="Brasil" width="20
 
 # William M. Berger
 
+
 **Python Developer | FastAPI · SQL · Docker | Applied AI & Automation**
 
 
